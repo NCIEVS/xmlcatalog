@@ -2,12 +2,15 @@ package org.protege.xmlcatalog;
 
 import java.io.File;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import junit.framework.TestCase;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 
 public class CatalogTest extends TestCase {
-    private static final Logger log = Logger.getLogger(CatalogTest.class);
+    private static final Logger log = LoggerFactory.getLogger(CatalogTest.class);
 
     public void testExample1() {
         try {

@@ -3,7 +3,7 @@ package org.protege.xmlcatalog.redirect;
 import java.io.IOException;
 import java.net.URI;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.protege.xmlcatalog.EntryVisitor;
 import org.protege.xmlcatalog.XMLCatalog;
 import org.protege.xmlcatalog.entry.DelegatePublicEntry;
@@ -17,9 +17,11 @@ import org.protege.xmlcatalog.entry.RewriteSystemEntry;
 import org.protege.xmlcatalog.entry.RewriteUriEntry;
 import org.protege.xmlcatalog.entry.SystemEntry;
 import org.protege.xmlcatalog.entry.UriEntry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class UriRedirectVisitor implements EntryVisitor {
-    private static Logger log = Logger.getLogger(UriRedirectVisitor.class);
+    private static Logger log = LoggerFactory.getLogger(UriRedirectVisitor.class);
     private URI original;
     private URI redirect;
     

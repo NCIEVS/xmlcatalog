@@ -6,16 +6,18 @@ import java.util.NoSuchElementException;
 
 import javax.swing.tree.TreeNode;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.protege.xmlcatalog.CatalogUtilities;
 import org.protege.xmlcatalog.XMLCatalog;
 import org.protege.xmlcatalog.entry.Entry;
 import org.protege.xmlcatalog.entry.GroupEntry;
 import org.protege.xmlcatalog.entry.NextCatalogEntry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class EntryTreeNode implements TreeNode {
-	public static final Logger LOGGER = Logger.getLogger(EntryTreeNode.class);
+	public static final Logger LOGGER = LoggerFactory.getLogger(EntryTreeNode.class);
 	
 	private TreeNode parent;
 	private Entry entry;

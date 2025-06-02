@@ -8,11 +8,13 @@ import java.io.IOException;
 import javax.swing.JComponent;
 import javax.swing.TransferHandler;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+//import org.apache.log4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class CatalogEditorTransferHandler extends TransferHandler {
 	private static final long serialVersionUID = 1160492460896419035L;
-	public static final Logger LOGGER = Logger.getLogger(CatalogEditorTransferHandler.class);
+	public static final Logger LOGGER = LoggerFactory.getLogger(CatalogEditorTransferHandler.class);
 
 	public int getSourceActions(JComponent c) {
 		EntryTreeNode e = getEntryTreeNode(c);

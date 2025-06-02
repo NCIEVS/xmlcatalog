@@ -3,7 +3,7 @@ package org.protege.xmlcatalog.parser;
 import java.net.URI;
 import java.util.Stack;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.protege.xmlcatalog.Prefer;
 import org.protege.xmlcatalog.XMLCatalog;
 import org.protege.xmlcatalog.XmlBaseContext;
@@ -18,12 +18,14 @@ import org.protege.xmlcatalog.entry.RewriteSystemEntry;
 import org.protege.xmlcatalog.entry.RewriteUriEntry;
 import org.protege.xmlcatalog.entry.SystemEntry;
 import org.protege.xmlcatalog.entry.UriEntry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 public class Handler extends DefaultHandler {
-    private static final Logger logger = Logger.getLogger(Handler.class);
+    private static final Logger logger = LoggerFactory.getLogger(Handler.class);
     
     public final static String CATALOG_NAMESPACE         = "urn:oasis:names:tc:entity:xmlns:xml:catalog";
     
